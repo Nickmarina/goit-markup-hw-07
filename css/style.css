@@ -51,6 +51,7 @@ img{
     height: auto;
 }
 
+/* кнопки */
 .btn{
     display: inline-block;
     width: 200px;
@@ -64,6 +65,11 @@ img{
     line-height: 1.9;
     letter-spacing: 0.06em;
 } 
+
+.btn:hover,
+.btn:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
 
 .visually-hidden {
     position: absolute;
@@ -451,6 +457,7 @@ ul a{
 
 /* футер */
 .page-footer{
+    padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--sections-background);
     color: var(--white-color);
@@ -464,7 +471,7 @@ ul a{
 .adress-section .logo{
     display: block;
     margin-bottom: 20px;    
-    padding-top: 60px;
+    
 }
 .adress-section{
     margin-right: 70px;
@@ -574,30 +581,19 @@ address .item{
     padding-left: 16px;
 }
 
-.mail-form button{
-    /* position: relative; */
-    display: inline-flex;
+.mail-form__button{
+    display: flex;
     justify-content: center;
     align-items: center;
-    width: 200px;
-    height: 50px;
-    background-color: var(--selection-color);
-    border-color: var(--selection-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    color: var(--white-color);
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.9;
+}
+.mail-form__button>.icon{
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    fill: var(--white-color);
 }
 
-    .mail-form button::after{
-    /* position: absolute;
-    top: 50%;
-    right: 28px;
-    
-    transform: translateY(-50%); */
-
+/* .mail-form .btn::after{
     display: inline-block;
     content: " ";
     margin-left: 10px;
@@ -605,7 +601,7 @@ address .item{
     height: 24px;
     background-image: url(../images/main-page/icon-send.svg);
     background-size: contain;
-}
+} */
 
 /* Модальное окно */
 .backdrop{
@@ -810,12 +806,6 @@ address .item{
 .checkbox-text{
     color: var(--selection-color);
     text-decoration: underline;  
-}
-
-
-.submit-btn:hover,
-.submit-btn:focus {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 

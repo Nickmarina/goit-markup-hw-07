@@ -348,7 +348,11 @@
                     <label for="email">Подпишитесь на рассылку</label>
                     <div class="field">
                         <input type="email" name="mail" id="email" placeholder="E-mail"/>
-                        <button type="submit"><span class="btn-title" >Подписаться</span></button>
+                        <button type="submit" class="btn mail-form__button">Подписаться
+                            <svg class="icon">
+                                <use href="./images/sprite.svg#icon-icon-send"></use>
+                            </svg>
+                        </button>
                     </div>
             </form>
         </div>
@@ -370,6 +374,7 @@
                     <div class="form-field"> 
                         <label for="phone" class="form-label">Телефон</label>
                         <input type="tel" name="phone" id="phone" class="form-input" placeholder=" " required>
+                        <!-- pattern="[0-9]{10,12}" -->
                         <svg class="form-field-icon">
                             <use href="./images/sprite.svg#icon-phone-black"></use>
                         </svg>   
@@ -398,7 +403,7 @@
                             </span>
                         </label>
                     </div>
-                    <button type="submit" class="submit-btn btn">Отправить</button>     
+                    <button type="submit" class="btn">Отправить</button>     
                 </div>           
                           
             </form>
