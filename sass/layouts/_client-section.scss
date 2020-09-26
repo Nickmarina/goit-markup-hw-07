@@ -1,0 +1,43 @@
+/* секция клиентов */
+.client-section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    .client-list{
+        display:flex;
+    }
+}
+
+.client-list__item{
+    width: calc((100% - 150px)/6);  
+    margin-right: 30px;
+    border: 1px solid #AFB1B8;
+    box-sizing: border-box;
+    border-radius: 4px;    
+
+    transition: border 250ms $timing-cubic;
+    
+    &:last-child{
+        margin-right: 0;
+    }
+
+    &:hover,
+    &:focus{
+        border: 1px solid $selection-color;
+    }
+}
+
+
+.client-list__icon{
+    width: 170px;
+    height: 90px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    fill: $icon-color;
+    transition:fill 250ms $timing-cubic;
+
+    .client-list__item:hover &,
+    .client-list__item:focus &{
+        fill: $selection-color;
+    }
+}
