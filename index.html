@@ -39,7 +39,7 @@
         <section class="hero">
             <div class="overlay">
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                <button type="button" class="hero-btn " data-modal-open>Заказать услугу</button>
+                <button type="button" class="btn " data-modal-open>Заказать услугу</button>
             </div>
         </section>
         <section class="advantages-section">
@@ -356,7 +356,6 @@
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <form class="modal-form">
-                <div class="main-section">
                     <b>Оставьте свои данные, мы вам перезвоним</b>
                 
                     <div class="form-field"> 
@@ -389,19 +388,19 @@
                         <label for="comment" class="form-label">Комментарий</label>
                         <textarea name="comment" id="comment" class="form-textarea" placeholder="Введите текст"></textarea>
                     </div>
-                </div>                
-                <div class="checkbox-field">
-                    <label>
-                        <input type="checkbox" class="checkbox visually-hidden" id="checkbox" value="agree">
-                        <span class="icon"></span>
-                        <span class="text">Соглашаюсь с рассылкой и принимаю 
-                            <a href=""><span class="checkbox-text">Условия договора</span></a>
-                        </span>
-                    </label>
-                </div>
-                <div class="form-button">
-                    <button type="submit" class="submit-btn">Отправить</button>
-                </div>                
+                <div class="bottom-form-section">
+                    <div class="checkbox-field">
+                        <label>
+                            <input type="checkbox" class="checkbox visually-hidden" id="checkbox" value="agree">
+                            <span class="icon"></span>
+                            <span class="text">Соглашаюсь с рассылкой и принимаю 
+                                <a href=""><span class="checkbox-text">Условия договора</span></a>
+                            </span>
+                        </label>
+                    </div>
+                    <button type="submit" class="submit-btn btn">Отправить</button>     
+                </div>           
+                          
             </form>
 
             <button type="button" aria-label="modal icon" class="close-button" data-modal-close>
